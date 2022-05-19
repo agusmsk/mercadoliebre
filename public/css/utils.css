@@ -1,0 +1,190 @@
+/* ----- paddings margenes y fx generales ----*/
+
+.mt-200 {
+  margin-top: 195px;
+}
+
+.p-8 {
+  padding: 8px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+.plr-5 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.mlr-5 {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.pb-8 {
+  padding-bottom: 8px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+.fx {
+  display: flex;
+}
+
+.botones {
+  justify-content: center;
+}
+
+.fx-wrap {
+  flex-wrap: wrap;
+}
+
+.fx-align-center {
+  align-items: center;
+}
+
+.fx-70 {
+  flex-grow: 0.7;
+}
+
+.w-90 {
+  width: 90%;
+}
+.w-70 {
+  width: 70%;
+}
+.w-50 {
+  width: 50%;
+}
+
+.w-33 {
+  width: 33%;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.main-center {
+  margin: 0 auto;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mlr-8 {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.stre {
+  align-items: stretch;
+}
+
+/* ---- css para forms register.html & login.html ----*/
+
+
+
+.inp-90 {
+  width: 90%;
+  margin-bottom: 15px;
+}
+
+.inp-70 {
+  width: 70%;
+  margin-bottom: 15px;
+}
+
+.in-opt {
+  border: 0px;
+}
+
+.form-camp1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.form-camp1 > .form-caja {
+  background-color: white;
+  border: none;
+  width: 100%;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.form-camp1 > .input-label {
+  display: block;
+  margin-bottom: 4px;
+  width: 100%;
+  font-weight: bold;
+}
+
+.access {
+  display: none;
+}
+
+.form-camp1 > .input-boton {
+  display: flex;
+  background-color: white;
+  border-radius: 5px;
+  width: 100%;
+  padding: 4px;
+}
+
+.form-camp1 > .input-boton > input {
+  padding: 4px;
+  flex-grow: 1;
+  border: none;
+  width: 100%;
+}
+
+.form-camp1 > .input-boton > .input-bb {
+  padding: 4px;
+  border: none;
+  margin-left: 2px;
+  background-color: white;
+}
+
+
+.but-reg {
+  display: block;
+  flex-grow: 1;
+  align-self: stretch;
+  text-align: center;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+  height: 40px;
+  background-color: #eac926;
+}
+
+/* hover botones */
+
+.but-reg:hover {
+  background-color: #0022AA;
+  color: white;
+  transition: 0.4s ease-in-out;
+}
+
+/*- validacion input caja color */
+
+input:required:invalid {
+  border: 1px solid red;
+}

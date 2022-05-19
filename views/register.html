@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Mercado Liebre</title>
+    
+    <!-- desarrollado por agustin benitez @agusmsk
+    
+        https://i.giphy.com/media/aNqEFrYVnsS52/giphy.webp
+    
+    -->    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400&family=Roboto&display=swap" 
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/utils.css" />
+
+    <link rel="stylesheet" href="/css/theme.css">
+    <link rel="stylesheet" href="/css/styles-tablet.css" />
+    <link rel="stylesheet" href="/css/styles-laptop.css" />
+
+</head>
+  <!-- copio y pego el header -->
+  <body class="bg-light-grey">
+    <!-- agrego la class al body -->
+<header class="fh p-20 bg-yellow font-dark-grey">
+        <div class="fx fx-wrap fx-align-center">
+        <h1 class="w-50 w-d-33">
+            <img class="logo" src="./images/logo-mercado-liebre.svg" alt="Mercado Liebre"></img>
+        </h1>
+        <form class="w-50 fx p-8 w-d-33">
+          <div class="form-camp1 w-100 mb-0">
+            <div class="input-boton">
+              <input class="form-caja" type="text" name="search" placeholder="Buscar productos y más..." />
+              <button class="input-bb">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+        <p class="copy-header w-100 w-d-33">
+            <i class="fas fa-hand-holding-usd"></i> 
+            Comprá en cuotas y sin tarjeta de crédito
+        </p>
+        </div>
+
+        <div class="burger-menu">
+        <i class="fas fa-bars bg-light-blue font-white bg-burger"></i>
+        </div>
+
+        <nav class="main-navbar">
+            <ul class="left-navbar mb-8">
+                <li class="mlr-8"><a href="#">Ofertas</a></li>
+                <li class="mlr-8"><a href="#">Tiendas Oficiales</a></li>
+                <li class="mlr-8"><a href="#">Vender</a></li>
+                <li class="mlr-8"><a href="#">Ayuda</a></li>
+            </ul>
+            <ul class="right-navbar mb-8">
+                <li class="mlr-8"><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                <li class="mlr-8"><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                <li class="mlr-8"><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="p-8 fx fx-wrap w-90 main-center">
+      <h1 class="mt-200">Registro de Usuario</h1>
+        <form class="mainforma form-camp1" action="/" method="get">
+          <div  class="form-camp1 inp-90" >
+            <label for="nombre" class="access w-100 pb-8">Nombre y Apellido:</label>
+            <input class="form-caja" type="text" name="nya" id="nombre" minlength="7" placeholder="Nombre y Apellido" required/>
+          </div>
+          <div class="form-camp1 inp-90" >
+            <label for="username" class="access w-100 pb-8">Nombre de Usuario:</label>
+            <input class="form-caja" type="text" name="username" id="username" minlength="7" placeholder="Nombre de usuario" required/>
+          </div>
+          <div class="form-camp1 inp-90" >
+            <label for="email" class="access w-100 pb-8">Correo electrónico:</label>
+            <input class="form-caja" type="mail" name="email" id="email" placeholder="Correo electrónico" required/>
+          </div>
+          <div class="form-camp1 inp-90" >
+            <label class="w-100 pb-8" for="dob">Fecha de Nacimiento:</label>
+            <input class="form-caja" type="date" name="DOB" id="dob"/>
+          </div>
+          <div class="form-camp1 inp-90" >
+            <label for="address" class="access">Dirección:</label>
+            <input class="form-caja" type="text" name="address" id="address" placeholder="Domicilio" required/>
+          </div>
+          <div class="form-camp1 inp-90" >
+            <label  class="w-100 pb-8" for="profile">Tipo de perfil:</label>
+            <label class="w-50" ><input type="radio" name="profile" value="comprador"/>Comprador</label>
+            <label class="w-50" ><input type="radio" name="profile" value="vendedor" />Vendedor</label>
+          </div>
+          <div class="form-camp1 inp-90" >
+            <label for="interests">Intereses:</label>
+            <div class="in-opt w-100 pt-10 plr-5">
+            <label class="mlr-5"
+              ><input
+                type="checkbox"
+                name="interests"
+                id="inter-electro"
+                value="Electro"
+                
+                
+              />  Electro</label
+            ></div>
+            <div class="in-opt w-100 pt-10 plr-5">
+            <label class="mlr-5"
+              ><input
+                type="checkbox"
+                name="interests"
+                id="inter-moda"
+                value="Moda"
+              />  Moda</label
+            ></div>
+            <div class="in-opt w-100  pt-10 plr-5">
+            <label class="mlr-5"
+              ><input
+                type="checkbox"
+                name="interests"
+                id="inter-home"
+                value="Hogar"
+              />  Hogar</label
+            ></div>
+            <div class="in-opt w-100  pt-10 plr-5"><label class="mlr-5"
+              ><input
+                type="checkbox"
+                name="interests"
+                id="inter-toys"
+                value="Juguetería"
+              />  Juguetería</label
+            ></div>
+            <div class="in-opt w-100  pt-10 plr-5"><label class="mlr-5"
+              ><input type="checkbox" name="interests" id="inter-vidas" value="Vida sana" />  Vida
+              sana</label
+            ></div>
+          </div>
+        </div>
+          <div class="form-camp1 p-10 inp-90" >
+            <label class="w-100 pb-8" for="avatar">Foto de Perfil:</label>
+            <input type="file" name="avatar" accept="image/*" id="avatar"/>
+          </div>
+          <div class="form-camp1 inp-90" >
+            <label for="password" class="access">Contraseña:</label>
+            <input class="form-caja" type="password" name="password" id="password" minlength="7" placeholder="Contraseña" required />
+          </div>
+          <div class="form-camp1 inp-90" >
+            <label for="password2" class="access">Confirmar Contraseña:</label>
+            <input class="form-caja" type="password" name="password2" id="password2" minlength="7" placeholder="Confirmar contraseña" required />
+          </div>
+          <div class="botones w-90">
+          <div class="form-camp1" >
+            <button type="submit"class="but-reg w-70">Enviar</button>
+          </div>
+          <div class="form-camp1" >
+            <button type="reset" class="but-reg w-100">Reiniciar registro</button>
+          </div>
+          </div>
+        </form>
+    </main>
+        <footer>
+        <section class="foot-box p-8 fx fx-wrap info-extra redu-ancho font-dark-grey bg-white">
+            <div class="foot-block p-8 w-90 w-d-33">
+                <i class="foot-ico fas fa-credit-card icon-foot font-light-blue pb-8"></i>
+                <h3>Pagá con tarjeta o en efectivo</h3>
+                <p class="footer-t">Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. Y siempre es seguro!</p>
+            </div>
+            <div class="foot-block p-8 w-90 w-d-33">
+                <i class="foot-ico fas fa-gift icon-foot font-light-blue pb-8"></i>
+                <h3>Envío gratis desde $ 2.500</h3>
+                <p class="footer-t">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+            </div>
+            <div class="foot-block p-8 w-90 w-d-33">
+                <i class="foot-ico fas fa-user-shield icon-foot font-light-blue pb-8"></i>
+                <h3>Seguridad de principio a fin</h3>
+                <p class="footer-t">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
+            </div>
+            <div class="p-8 w-100">
+                <h4 class="p-8">Copyright © 1999-2022 MercadoLiebre S.R.L.</h4>
+            </div>
+        </section>
+    </footer>
+  </body>
+</html>
