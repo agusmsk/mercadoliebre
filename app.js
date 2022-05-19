@@ -6,9 +6,9 @@ const app = express()
 const publicPath = path.resolve(__dirname, './public');
 app.use(express.static(publicPath)); //aca le decimos a express cual es la carpeta de dominios publicos
 
-app.listen(3000, ()=> {
-    console.log("El servidor se encuentra corriendo en el puerto 3000")
-} ); //ejecutamos el servidor en el puerto 3000
+app.listen(process.env.PORT || 3000, function() {
+    console.log("Servidor corriendo OK")
+} ); //codigo para heroku
 
 app.get('/', (req,res)=> {
     res.sendFile(path.resolve(__dirname, './views/home.html'))
@@ -23,3 +23,8 @@ app.get("/login", (req, res) => {
   // añadimos el login.html
   res.sendFile(path.join(__dirname, "views/login.html"));
 });
+
+///
+///app.listen(3000, ()=> {
+///    console.log("El servidor se encuentra corriendo en el puerto 3000")
+///} ); 
