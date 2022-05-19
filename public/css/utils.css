@@ -46,6 +46,7 @@
 
 .fx-align-center {
   align-items: center;
+  justify-content: center;
 }
 
 .fx-70 {
